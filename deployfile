@@ -1,1 +1,4 @@
 deployed file on tomcat
+Both Application Load Balancer and Network Load Balancer are designed from the ground up for the modern paradigm of dynamic port configurations as commonly seen in containerized deployments. Picking which load balancer is right for you will depend on the specific needs of your application, such as whether or not network traffic is HTTP, whether you need end to end SSL/TLS encryption, and whether or not you want host and path based traffic routing.
+
+If you are deploying docker containers and using a load balancer to send network traffic to them EC2 Container Service provides a tight integration with ALB and NLB so you can keep your load balancers in sync as you start, update, and stop containers across your fleet.
